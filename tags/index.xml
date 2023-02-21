@@ -1,10 +1,1 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Tags on Dodeka Developments</title>
-    <link>https://4838-178-149-216-243.eu.ngrok.io/tags/</link>
-    <description>Recent content in Tags on Dodeka Developments</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://4838-178-149-216-243.eu.ngrok.io/tags/index.xml" rel="self" type="application/rss+xml" />
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tags on Dodeka Developments</title><link>https://4838-178-149-216-243.eu.ngrok.io/tags/</link><description>Recent content in Tags on Dodeka Developments</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://4838-178-149-216-243.eu.ngrok.io/tags/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
