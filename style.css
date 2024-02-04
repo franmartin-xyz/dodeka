@@ -1,0 +1,665 @@
+body{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.containerContact {
+    flex: 1; /* Each container takes equal width */
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.containerContact h4, .containerContact .ubication, .containerContact .small {
+    word-wrap: break-word; /* Breaks the words to prevent overflow */
+    overflow-wrap: break-word; /* Ensures overflow text is wrapped */
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.separatorLine{
+    width: 93px;
+    height: 2px;
+    background-color: white;
+    border-radius: 1px;
+}
+
+.marginLeft{
+    margin-left: 10vw;
+}
+
+/* Our Technology Section */
+
+.OTcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 0px;
+}
+.OTitle{
+    font-size: 5vw;
+    text-align: center;
+    align-self: center;
+    margin: -10px 0px 10px 0px;
+}
+
+.iconTech{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 95vw;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.iconTech > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+.iconTech div svg{
+    fill: white;
+    width: 138px;
+    max-width: calc(650px/3);
+    height: 100px;
+    display: block;
+    align-self: center;
+    margin-top: 5px;
+    flex: 1 1 auto;
+}
+.iconTech div svg:hover{
+    filter: drop-shadow(2px 5px 3px rgba(38, 209, 252, 0.333));
+    transition: 0.2s;
+}
+.iconTech div span{
+    margin-top: 5px;
+   font-size: 1.5vw;
+}
+
+@media (max-width: 1200px) {
+    .iconTech div svg{
+        width: 100px;
+        transition: 0.5s;
+    }
+    .iconTech div span{
+       font-size: 2vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .iconTech div svg{
+        width: 80px;
+        transition: 0.5s;
+    }
+    .iconTech div span{
+        font-size: 2.5vw;
+     }
+}
+
+/* Mobile devices (screens less than 480px) */
+@media (max-width: 480px) {
+    .iconTech{
+        margin-top: 0px;
+    }
+    .OTitle{
+        margin: 0px 0px 2px 0px;
+    }
+    .iconTech div svg{
+        width: 70px;
+        transition: 0.5s;
+    }
+    .iconTech{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .iconTech > div{
+        margin-bottom: 10px;
+        flex-basis: calc(100% / 3 - 20px); /* Adjust the 20px as needed for margins */
+        max-width: calc(100% / 3 - 20px);
+    }
+    .iconTech div span{
+        font-size: 3.5vw;
+     }
+}
+
+/* Contac US */
+.ContactUs {
+    height: 100%;
+    width: 50%;
+}
+
+.ContactOutCont{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.ContactTitle{
+    font-size: 3rem;
+    color: white;
+    text-align: start;
+    width: 80%;
+    margin-bottom: 20px;
+    margin-left: 10vw;
+
+}
+
+.ContactContainer{
+    width: 100%;
+    height: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 10vw;
+}
+
+.containerContact {
+    margin-top: 30px;
+    height: 100%;
+    padding: 5px;
+    background-color: #1A2734;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    border-radius: 8px;
+    /* flex-grow: 0; */
+    /* flex-shrink: 0; */
+    flex-basis: 25%; 
+    margin-right: 10px;
+}
+
+.contact_svg{
+    width: 5vh;
+    height: 5vh;
+    fill: white;
+    padding: 0px;
+    margin: 0px;
+}
+
+.contact_svg:hover{
+    filter: drop-shadow(2px 5px 3px rgba(38, 209, 252, 0.333));
+    transition: 0.2s; 
+    cursor: pointer;
+}
+
+.containerContact span{
+    color: white;
+}
+
+.contactLink{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width: 1200px) {
+    .ContactUs{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 50%;
+    }
+    .ContactOutCont{
+        justify-content: normal;
+        align-items: center;
+    }
+    .ContactContainer{
+        flex-direction: column;
+        width: fit-content;
+        margin-left: 0px;
+        height: 35vh;
+        gap: 10px;
+    }
+    .marginLeft{
+        margin-left: 0px;
+    }
+    .containerContact{
+        width: 60vw;
+        flex-basis: 90px;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+    .ContactTitle{
+        font-size: 5vh;
+        text-align: center;
+        margin: 0px 0px 20px 0px;
+    }
+    .ContactText{
+        font-size: 2vh;
+    }
+    .contact_svg{
+        width: 3vh;
+        height: 3vh;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .ContactUs{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 52%;
+    }
+    .ContactOutCont{
+        justify-content: normal;
+        align-items: center;
+    }
+    .ContactContainer{
+        flex-direction: column;
+        width: fit-content;
+        margin-left: 0px;
+        padding: 0px;
+        height: 30vh;
+        gap: 20px;
+    }
+    .marginLeft{
+        margin-left: 0px;
+    }
+    .containerContact{
+        width: 60vw;
+        flex-basis: 80px;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 20px;
+        margin-top: 15px;
+        margin-right: 0px;
+        min-width: 0px;
+    }
+    .ContactTitle{
+        font-size: 5vh;
+        text-align: center;
+        margin: 0px 0px 0px 0px;
+    }
+    .ContactText{
+        font-size: 1.6vh;
+    }
+    .contact_svg{
+        width: 3vh;
+        height: 3vh;
+    }
+}
+
+@media (max-width: 380px) {
+    .ContactUs{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 52%;
+    }
+    .ContactOutCont{
+        justify-content: normal;
+        align-items: center;
+    }
+    .ContactContainer{
+        flex-direction: column;
+        width: fit-content;
+        margin-left: 0px;
+        padding: 0px;
+    }
+    .marginLeft{
+        margin-left: 0px;
+    }
+    .containerContact{
+        width: 60vw;
+        flex-basis: 90px;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 20px;
+        margin-top: 5px;
+        margin-right: 0px;
+    }
+    .ContactTitle{
+        font-size: 5vh;
+        text-align: center;
+        margin: 0px 0px 0px 0px;
+    }
+    .ContactText{
+        font-size: 1.6vh;
+    }
+    .contact_svg{
+        width: 3vh;
+        height: 3vh;
+    }
+}
+
+/* About US */
+.AboutUs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: start;
+    height: 100%;
+    width: 50%;
+    margin-left: auto;
+}
+
+.AboutUsText{
+ font-size: 1rem;
+ width: 95%;
+ color: white;
+ font-size: 1rem;
+}
+
+.AboutUsTitle{
+width: 100%;
+color: white;
+font-size: 3rem;
+}
+
+@media (max-width: 1100px){
+    .AboutUs{
+        justify-content: flex-start;
+        align-items: center;
+        height: 50%;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+    }
+    .AboutUsWrapper{
+        width: 90%;
+        height: 100%;
+    }
+    .AboutUsText{
+        font-size: 2vh;
+    }
+    .AboutUsTitle{
+        font-size: 4rem
+    }
+
+}
+
+@media (max-width: 650px){
+    .AboutUs{
+        justify-content: flex-start;
+        align-items: center;
+        height: 50%;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+    }
+    .AboutUsWrapper{
+        width: 90%;
+        height: 100%;
+    }
+    .AboutUsText{
+        font-size: 1.7vh;
+    }
+    .AboutUsTitle{
+        font-size: 2rem
+    }
+}
+
+/* Our Project */
+.OurProjects{
+    display: flex;
+    height: 100%;
+    width: 55%;
+    margin-left: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+ }
+
+.ProjectTitle{
+    color: white;
+    font-size: 2rem;
+    margin: 0px 0px 20px 85px;
+    text-align: center;
+}
+
+.ProjectTitleItem{
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    height: 20%;
+}
+.marginLeftProject{
+    margin-left: 85px;
+}
+
+.CarouselInfoContainer{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    height: 100%;
+}
+
+.CarouselButton{
+    margin: 3px;
+    background-color: #FBAF29;
+    border: none;
+    border-radius: 4px;
+    width: 70%;
+    padding: 10px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+body{
+    background-color: black;
+}
+.carousel{
+    width: 90%;
+    height: 60%;
+    margin-top: 20px;
+}
+
+.slider-item {
+    background-color:#1A2734;;
+    margin: 0 10px 0px 10px;
+    height: 100%;
+    border-radius: 8px;
+    border: 2px solid white;
+}
+
+.slick-slide div{
+    margin: 0px 10px;
+}
+.carousel .slider-item {
+    text-align: center;
+}
+
+.carousel .CarouselItem {
+    max-width: 100%; 
+    height: auto; 
+}
+
+.ProjectTitleItem{
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    height: 20%;
+}
+
+.CarouselViewer{
+    width: 100%;
+    border-radius: 5px;
+    background-color:#1A2734 !important; 
+}
+
+.CarouselItem{
+    height: 60%;
+    width: 100%;
+    border-radius: 6px;
+}
+
+.CarouselItem, .slider-item img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+.CarouselButton{
+    margin: 3px;
+    background-color: #FBAF29;
+    border: none;
+    border-radius: 4px;
+    width: 70%;
+    padding: 10px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.CarouselSvg{
+    height: 1rem;
+}
+
+.slider-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    overflow: hidden;
+    transition: 1s;
+    max-height: calc(100vh - 80px);
+    height: 85%;
+}
+  
+  .slider-item img {
+    width: 100%;
+    border-radius: 6px;
+  }
+
+  @media (max-width: 1100px) {
+    .OurProjects{
+        height: 55%;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .ProjectTitle{
+        margin-left: 0px;
+    }
+    .marginLeftProject{
+        margin-left:0px;
+    }
+    .slick-list{
+        height: 100% !important;
+    }
+    .slick-slide div{
+        margin: 2px 0px;
+        width: 98%;
+        height: 60%;
+    }
+    .carousel{
+    width: 90%;
+    margin-top: 20px;
+    height: 60%;
+    }
+    .slider-item{
+        display: flex !important;
+        justify-content: flex-start;
+        align-items: center;
+        height: 100%;
+    }
+    .CarouselInfoContainer{
+        display: flex;
+        width: 50%;
+        height: 100%;
+    }
+    .CarouselItem{
+        width: 50% !important;
+    }
+    .CarouselViewer{
+    width: 50%;
+    }
+    .slick-prev {
+          top:0 !important;
+          left: 48%!important;
+          transform: rotate(90deg) !important;
+          z-index: 10;
+      }
+      
+      .slick-next {
+          top:100%!important;
+          left: 48%!important;
+          transform: rotate(90deg) !important;
+          z-index: 10;
+      }
+    }
+
+    /* Testimonials */
+    .Testimonials {
+        width: 100%;
+        height: 50%;
+        position: absolute;
+        /* Add this */
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
+    .bottoMargin{
+        margin-bottom: 20px;        
+    }
+    .TestimonialsTitle{
+        color: white;
+        font-size: 2rem;
+        text-align: center;
+        height: fit-content;
+        margin: 0px 0px 10px 0px;
+    }
+    .Testimonials div a{
+        text-decoration: none;
+        color: white;
+    }
+    .Testimonials div span{
+        font-size: 1.5rem;
+    }
+    .Testimonials div p{
+        font-size: 0.8rem;
+        color: white;
+    }
+    .AVE,.EVA,.ASE,.SVF{
+        border: 2px solid white;
+        padding: 0px 0px 0px 4px;
+        width: fit-content;
+        height: 90%;
+        border-radius: 8px;
+        display: flex !important;
+        flex-direction: column;
+        text-align: center;
+        align-content: center !important;
+        background-color:#1A2734;
+    }
+    .TestimonialsImg{
+        height: 8vh;
+        width: auto !important;
+        align-self: center;
+    }
+    @media (min-width: 1100px) {
+        .AVE,.EVA,.ASE,.SVF{
+            max-width: 40vw;
+        }
+        .TestimonialsTitle{
+            font-size: 3rem;
+        }
+        .Testimonials div span{
+            font-size: 2rem;
+        }
+        .Testimonials div p{
+            font-size: 1rem;
+        }
+    }
