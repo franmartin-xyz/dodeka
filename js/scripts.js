@@ -61,3 +61,12 @@ fetch(action, { method: "POST", body: data })
   })
   .catch((error) => console.error("Error!", error.message, form));
 });
+
+// pop up
+document.addEventListener('DOMContentLoaded', function () {
+  var popup = document.getElementById('modelPopup');
+  var button = document.getElementById('experienceButton');
+
+
+ 
+});

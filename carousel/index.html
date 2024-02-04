@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>test</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script async src="https://ga.jspm.io/npm:es-module-shims@1.7.1/dist/es-module-shims.js"></script>
+    <script type="importmap">
+            {
+              "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@^0.160.0/build/three.module.min.js"
+              }
+            }
+            </script>
+    <script type="module"
+        src="https://cdn.jsdelivr.net/npm/@google/model-viewer/dist/model-viewer-module.min.js"></script>
+    <script type="module"
+        src="https://cdn.jsdelivr.net/npm/@google/model-viewer-effects/dist/model-viewer-effects.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../Favicon_3_32x32.png">
+    
+
+    </head>
+  <body>
+
+    <!-- Example Code -->
+    <div class="carousel">
+    <!-- <div class="slider-item">
+        <model-viewer class="CarouselViewer"
+            src="https://ik.imagekit.io/7smsvwxkz/v0/b/websiteave-c6330.appspot.com/o/Escudo_03_Favre%20Chippis.glb?alt=media&amp;token=788b2ab2-f922-40b8-8d1d-d4f3fd900942"
+            alt="Favre Family Shield" skybox="true" exposure="1" camera-controls="true" ar-scale="auto" ar-modes="webxr"
+            camera-orbit="90deg 90deg 4.7m" max-camera-orbit="auto auto 6m" progress="1" ar-status="not-presenting">
+        </model-viewer>
+        <div class="CarouselInfoContainer">
+            <span class="ProjectTitleItem">Swiss-Valaisan Family Shields</span>
+            <a target="_blank"
+                href="https://www.youtube.com/watch?v=AT6sMByDUZo&list=PLl16e1P0ny9QYgJQxJS96L9FM8KfFzKdV&index=3"
+                class="CarouselButton">Watch Video
+                <svg class="CarouselSvg" fill="#000000" viewBox="0 0 32 32" version="1.1"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M5.92 24.096q0 1.088 0.928 1.728 0.512 0.288 1.088 0.288 0.448 0 0.896-0.224l16.16-8.064q0.48-0.256 0.8-0.736t0.288-1.088-0.288-1.056-0.8-0.736l-16.16-8.064q-0.448-0.224-0.896-0.224-0.544 0-1.088 0.288-0.928 0.608-0.928 1.728v16.16z">
+                    </path>
+                </svg>
+            </a>
+        </div>
+    </div>
+    <div class="slider-item">
+        <img class="CarouselItem" src="./core.png" alt="High definition if dodeka icon" />
+        <div class="CarouselInfoContainer">
+            <span class="ProjectTitleItem">Dodeka Developemets</span>
+            <a target="_blank" href="https://www.youtube.com/watch?v=07PskYyMgQM" class="CarouselButton">Watch Video
+                <svg class="CarouselSvg" fill="#000000" viewBox="0 0 32 32" version="1.1"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M5.92 24.096q0 1.088 0.928 1.728 0.512 0.288 1.088 0.288 0.448 0 0.896-0.224l16.16-8.064q0.48-0.256 0.8-0.736t0.288-1.088-0.288-1.056-0.8-0.736l-16.16-8.064q-0.448-0.224-0.896-0.224-0.544 0-1.088 0.288-0.928 0.608-0.928 1.728v16.16z">
+                    </path>
+                </svg>
+            </a>
+        </div>
+    </div>
+    <div class="slider-item">
+        <img class="CarouselItem" src="./houserender.jpg" alt="Modern House Render" />
+        <div class="CarouselInfoContainer">
+            <span class="ProjectTitleItem">Modern House VR Experience</span>
+            <a target="_blank" href="https://www.youtube.com/watch?v=S0wjbMl6qI0" class="CarouselButton">Watch Video
+                <svg class="CarouselSvg" fill="#000000" viewBox="0 0 32 32" version="1.1"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M5.92 24.096q0 1.088 0.928 1.728 0.512 0.288 1.088 0.288 0.448 0 0.896-0.224l16.16-8.064q0.48-0.256 0.8-0.736t0.288-1.088-0.288-1.056-0.8-0.736l-16.16-8.064q-0.448-0.224-0.896-0.224-0.544 0-1.088 0.288-0.928 0.608-0.928 1.728v16.16z">
+                    </path>
+                </svg>
+            </a>
+        </div>
+    </div>
+    <div class="slider-item">
+        <img class="CarouselItem" src="./shields.png" alt="Dodeka High Detail Core render" />
+        <div class="CarouselInfoContainer">
+            <span class="ProjectTitleItem">AVE 3D Galery</span>
+            <a target="_blank" href="https://www.youtube.com/watch?v=6RKmXf-zUhE" class="CarouselButton">Watch Video
+                <svg class="CarouselSvg" fill="#000000" viewBox="0 0 32 32" version="1.1"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M5.92 24.096q0 1.088 0.928 1.728 0.512 0.288 1.088 0.288 0.448 0 0.896-0.224l16.16-8.064q0.48-0.256 0.8-0.736t0.288-1.088-0.288-1.056-0.8-0.736l-16.16-8.064q-0.448-0.224-0.896-0.224-0.544 0-1.088 0.288-0.928 0.608-0.928 1.728v16.16z">
+                    </path>
+                </svg>
+            </a>
+        </div>
+    </div> -->
+    <div style="color: white;">1</div>
+    <div style="color: white;">2</div>
+    <div style="color: white;">3</div>
+</div>
+    <!-- End Example Code -->
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.carousel').slick({
+                centerMode: true,
+                centerPadding: '60px',
+                slidesToShow: 2,
+                vertical: false, // Default to horizontal
+                slidesToScroll: 1,
+                responsive: [
+                {
+                    breakpoint: 1100, // At 1100px or less, it becomes vertical
+                    settings: {
+                        vertical: true,
+                        verticalSwiping: true,
+                        slidesToShow: 1, // Show only one slide at a time
+                        slidesToScroll: 1,
+                        swipeToSlide: true,
+                        focusOnSelect: true,
+                        arrows: true, // Optional: hide arrows in vertical mode
+                        // Additional vertical mode settings...
+                    }
+                },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '40px',
+                            slidesToShow: 3
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '40px',
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+            }
+            );
+        }
+        );
+
+        function adjustModelViewerHeight() {
+            // Select an image to use as a reference for height
+            var referenceImage = $('.carousel .CarouselItem').first();
+
+            // Wait for the image to load to get its height
+            referenceImage.on('load', function () {
+                var imageHeight = referenceImage.height();
+
+                // Set the model viewer height
+                $('.carousel .CarouselViewer').height(imageHeight);
+            });
+
+            // If the image is already loaded, set the height immediately
+            if (referenceImage[0].complete) {
+                $('.carousel .CarouselViewer').height(referenceImage.height());
+            }
+        }
+
+        // Adjust the height after initializing the carousel
+        adjustModelViewerHeight();
+
+        // Re-adjust the height on window resize
+        $(window).resize(function () {
+            adjustModelViewerHeight();
+        });
+        // Re-adjust the height after each slide change
+        $('.carousel').on('afterChange', function () {
+            adjustModelViewerHeight();
+        });
+    </script>
+  </body>
+</html>

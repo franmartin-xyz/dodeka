@@ -1,0 +1,125 @@
+body{
+    background-color: black;
+}
+.carousel{
+    width: 90%;
+}
+.carousel .slider-item {
+    text-align: center; /* Center content */
+}
+
+.carousel .CarouselItem, .carousel img {
+    max-width: 100%; /* Ensure images don't overflow */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.ProjectTitleItem{
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    height: 20%;
+}
+
+.CarouselViewer{
+    width: 100%; 
+}
+
+.CarouselItem{
+    height: 60%;
+    width: 100%;
+    border-radius: 6px;
+}
+
+.CarouselItem, .slider-item img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+.CarouselInfoContainer{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    height: 100%;
+}
+
+.CarouselButton{
+    margin: 3px;
+    background-color: #FBAF29;
+    border: none;
+    border-radius: 4px;
+    width: 70%;
+    padding: 10px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.CarouselSvg{
+    height: 1rem;
+}
+
+.slider-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    overflow: hidden;
+    transition: 1s;
+    max-height: calc(100vh - 80px);
+    height: 85%;
+}
+
+.slider-item {
+    background-color: transparent;
+    margin: 0 16px 0px 0;
+    height: 100%;
+    border-radius: 8px;
+    border: 2px solid white;
+  }
+  
+  .slider-item img {
+    width: 100%;
+    border-radius: 6px;
+  }
+  
+
+  @media (max-width: 1100px) {
+  .carousel{
+    width: 100%;
+    margin-top: 20px;
+    }
+    .slider-item{
+        display: flex !important;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .CarouselInfoContainer{
+        display: flex;
+        width: 50%;
+        height: 100%;
+    }
+    .CarouselItem{
+        width: 50% !important;
+    }
+    .CarouselViewer{
+    width: 50%;
+    }
+    .slick-prev {
+          top:0!important;
+          left: 48%!important;
+          transform: rotate(90deg) !important;
+          z-index: 10;
+      }
+      
+      .slick-next {
+          top:100%!important;
+          left: 48%!important;
+          transform: rotate(90deg) !important;
+          z-index: 10;
+      }
+  }
