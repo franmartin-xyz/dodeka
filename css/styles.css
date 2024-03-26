@@ -10033,7 +10033,7 @@ body {
 .projects-section {
     background-color: #000;
     min-height: 100vh;
-    padding: 10rem 0;
+    padding: 2rem 0;
 }
 .projects-section .featured-text {
     padding: 2rem;
@@ -10158,6 +10158,11 @@ body {
     flex-direction: row;
     justify-content: space-between;
 }
+#cont_wrapperShort {
+    display: flex;
+    flex-direction: row;
+    justify-content: Center;
+}
 #project-text {
     margin-bottom: 1rem;
 }
@@ -10165,7 +10170,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
 }
 .project-subtextColor:hover {
     color: #fff;
