@@ -10390,4 +10390,56 @@ body {
       opacity: 1;
     }
   }
-  
+.webExp{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.webCont img{
+    width: 40vw;
+    height: auto;
+    -webkit-transition: 400ms ease 100ms;
+    -moz-transition: 400ms ease 100ms;
+    transition: 400ms ease 100ms;
+}
+.webCont:hover .webImg{
+    filter: blur(3px);
+}
+
+#overlay-textRight{
+    position: absolute;
+    top: 65%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    transition: all 0.3s ease;
+    display: none;
+    z-index: 1000;
+    text-decoration: none;
+    text-decoration-line: none;
+    font-size: larger;
+    font-size: 1rem;
+    color: white;
+    border-radius: 14px;
+    padding: 14px;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-weight: 600;
+}
+#overlay-textLeft{
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(50%,50%);
+    text-align: center;
+    display: none;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    text-decoration: none;
+    background-color: rgba(var(--bs-dark-rgb), var(--bs-text-opacity));
+    border-radius: 14px;
+    padding: 14px;
+    font-size: 1rem;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-weight: 600;
+}
