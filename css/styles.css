@@ -10394,6 +10394,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    gap: 20px;
 }
 .webCont img{
     width: 40vw;
@@ -10428,7 +10429,7 @@ body {
 #overlay-textLeft{
     position: absolute;
     top: 50%;
-    left: 45%;
+    left: 50%;
     transform: translate(50%,50%);
     text-align: center;
     display: none;
@@ -10442,4 +10443,115 @@ body {
     color:white;
     background-color: rgba(0, 0, 0, 0.8);
     font-weight: 600;
+}
+
+@media (max-width: 1000px) {
+    .webExp {
+        width: 100%; /* Full width for smaller screens */
+        height: 90vh; 
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 0px;
+    }
+    .webCont{
+        width: 95%;
+        height: 45vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .webCont a{
+        width: 100%;
+        height: 100%;
+        display: flex;
+align-items: center;
+justify-content: center;
+    }
+    .webImg{
+        width:100%;
+        height:auto;
+    }
+    #overlay-textLeft,#overlay-textRight{
+        transform: translate(0%,0%);
+        left: 0;
+        top: 0;
+    }
+}
+
+/*  */
+.section4.newsroom .thumbnail {
+	margin-bottom: 10px;
+	font-size: 1rem;
+}
+.thumbnail{
+    height: 100% ;
+}
+.section4 .thumbnail {
+    position: relative;
+    padding: 0;
+    border: none;
+    margin-bottom: 10px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+.section4.newsroom .featured .thumbnail {
+	margin-bottom: 15px;
+}
+.section4.newsroom .thumbnail:hover .news-title-featured {
+	display: none;  
+}
+.section4.newsroom img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.section4 .thumbnail .overlay {
+    position: absolute;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+}
+.section4 .thumbnail:hover .overlay-inner {
+	background-color: transparent; 
+}
+.section4 .thumbnail .overlay-inner {
+    position: absolute;
+    background-color: rgba(0,0,0,0.7);
+    bottom: 0px;
+    padding: 0 20px;
+    width: 100%;
+}
+.section4.newsroom .thumbnail a {
+    text-decoration: none;
+}
+.section4 .thumbnail .overlay-inner h4 {
+    text-transform: inherit;
+    font-weight: 300;
+    color: rgba(255,255,255);
+    font-size: 150%;
+    margin-bottom: 1rem;
+}
+.section4 .thumbnail:hover .overlay {
+    background-color: rgba(0,0,0,0.7);
+    cursor: pointer;
+}
+.section4 .thumbnail .overlay-inner .title-hover {
+  display: none;
+}
+.section4 .thumbnail:hover .news-title {
+  display: none;
+}
+.section4 .thumbnail:hover .title-hover {
+  display: block;
+}
+.btn{
+  font-size:120%;
+}
+@media only screen and (max-width: 991px) {
+    .section4.newsroom .thumbnail {
+		font-size: .7rem;
+	}
 }
